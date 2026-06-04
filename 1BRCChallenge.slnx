@@ -1,0 +1,11 @@
+<Solution>
+  <Project Path="Benchmarkts/Benchmarks.csproj" />
+  <Project Path="DataGenerator/DataGenerator.csproj" />
+  <Project Path="Level1_Naive/Level1_Naive.csproj" />
+  <Project Path="Level2_Stream/Level2_Stream.csproj" Id="5af0fbea-7535-4fa0-8e23-6981af594bf4" />
+  <Project Path="Level3_Parallel/Level3_Parallel.csproj" Id="ec91f3de-c52e-4dfc-a69f-7396973638df" />
+  <Project Path="Level4_SharedMemory/Level4_SharedMemory.csproj" Id="9847d6f6-4ded-4cab-ae64-d628a5baf960" />
+  <Project Path="Level5_SIMD/Level5_SIMD.csproj" Id="3981cc63-20bc-418f-9456-e7905d941498" />
+  <Project Path="Level6_Expert/Level6_Expert.csproj" Id="f0ad3e1f-fe1e-4163-9f93-94ae714a86a9" />
+  <Project Path="Shared/Shared.csproj" />
+</Solution>
