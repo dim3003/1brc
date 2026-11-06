@@ -2,8 +2,8 @@
 
 public static class GlobalConstants
 {
-    public const string FilesDirectory = "V:\\Dometrain\\1BRC\\Files";
-    public const string FilePath = "V:\\Dometrain\\1BRC\\Files\\measurements.txt";
+    public const string FilesDirectory = "/home/dimitri/Repos/1brcFiles/";
+    public const string FilePath = "/home/dimitri/Repos/1brcFiles/measurements.txt";
 
     public const int ExpectedStationCount = 413;
     //public const int ExpectedStationCount = 10_000;
