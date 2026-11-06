@@ -1,6 +1,4 @@
 ﻿using BenchmarkDotNet.Running;
-using Benchmarks.Level4_SharedMemory;
-
 
 // 1 / 3 => 0.3333333333333334
 double x = 0.1;
