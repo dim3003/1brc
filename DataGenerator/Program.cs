@@ -5,7 +5,7 @@ using System.Text;
 
 const long DefaultRowCount = 1_000_000_000L;
 const int BufferSize = 8_000_000;
-const string DefaultOutputPath = GlobalConstants.FilePath;
+const string DefaultOutputPath = "~/Repos/1brcFiles/";
 const int ProgressInterval = 10_000_000;
 
 
