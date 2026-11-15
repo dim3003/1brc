@@ -3,6 +3,8 @@ using System.Diagnostics;
 using System.Globalization;
 using System.Text;
 
+var fr = CultureInfo.GetCultureInfo("fr-CH");
+
 
 Console.WriteLine("≡≡≡ Level 1: Naive (LINQ) Implementation ≡≡≡");
 Console.WriteLine($"File: {GlobalConstants.FilePath}");
@@ -27,7 +29,7 @@ string[] lines = File.ReadAllLines(GlobalConstants.FilePath, Encoding.UTF8);
 
 var results = lines
     .Select(line => line.Split(';', 2, StringSplitOptions.TrimEntries))
-    .Select(parts =>(City: parts[0], Temp: double.Parse(parts[1], CultureInfo.InvariantCulture)))
+    .Select(parts =>(City: parts[0], Temp: double.Parse(parts[1], fr)))
     .GroupBy(v => v.City)
     .Select(g => new
     {
@@ -42,8 +44,8 @@ var results = lines
 stopwatch.Stop();
 
 var output = "{" + string.Join(", ",
-    results.Select(s => $"{s.City}={s.Min:F1}/{s.Avg:F1}/{s.Max:F1}") +
-    "}");
+    results.Select(s => $"{s.City}={s.Min:F1}/{s.Avg:F1}/{s.Max:F1}")) +
+    "}";
 
 Console.WriteLine(output);
 
