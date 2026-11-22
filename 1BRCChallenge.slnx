@@ -1,5 +1,6 @@
 <Solution>
   <Project Path="DataGenerator/DataGenerator.csproj" />
   <Project Path="Level1_Naive/Level1_Naive.csproj" />
+  <Project Path="Level2_Stream/Level2_Stream.csproj" Id="3de6f24a-bcc9-4926-ac33-fd2d399a7dce" />
   <Project Path="Shared/Shared.csproj" />
 </Solution>
