@@ -1,11 +1,9 @@
-﻿
-using Shared;
-using System.Diagnostics;
+﻿using System.Diagnostics;
 using System.Text;
 
 const long DefaultRowCount = 1_000_000_000L;
 const int BufferSize = 8_000_000;
-const string DefaultOutputPath = "~/Repos/1brcFiles/";
+const string DefaultOutputPath = "C:\\Users\\andre\\source\\data\\1brc";
 const int ProgressInterval = 10_000_000;
 
 
@@ -442,9 +440,12 @@ var rowCount = string.IsNullOrEmpty(rowInput)
                  .Replace("_", ""));
 
 
-Console.Write($"  Output file [{DefaultOutputPath}]: ");
-var pathInput = Console.ReadLine();
-var outputPath = string.IsNullOrWhiteSpace(pathInput) ? DefaultOutputPath : pathInput;
+Console.Write("  Output file name [measurements.txt]: ");
+var fileNameInput = Console.ReadLine();
+var fileName = string.IsNullOrWhiteSpace(fileNameInput)
+    ? "measurements.txt"
+    : Path.GetFileName(fileNameInput.Trim());
+var outputPath = Path.Combine(DefaultOutputPath, fileName);
 
 Console.WriteLine();
 Console.WriteLine($"  ► Row count:      {rowCount:N0}");
